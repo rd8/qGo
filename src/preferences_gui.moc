@@ -1,0 +1,237 @@
+/****************************************************************************
+** PreferencesDialogGui meta object code from reading C++ file 'preferences_gui.h'
+**
+** Created: Sat Jul 12 14:42:51 2014
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "preferences_gui.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *PreferencesDialogGui::className() const
+{
+    return "PreferencesDialogGui";
+}
+
+QMetaObject *PreferencesDialogGui::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_PreferencesDialogGui( "PreferencesDialogGui", &PreferencesDialogGui::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString PreferencesDialogGui::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "PreferencesDialogGui", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString PreferencesDialogGui::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "PreferencesDialogGui", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* PreferencesDialogGui::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QDialog::staticMetaObject();
+    static const QUMethod slot_0 = {"doAdjourn", 0, 0 };
+    static const QUMethod slot_1 = {"doPass", 0, 0 };
+    static const QUMethod slot_2 = {"doRefresh", 0, 0 };
+    static const QUMethod slot_3 = {"doResign", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"doScore", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"doUndo", 0, 0 };
+    static const QUParameter param_slot_6[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slot_clickedSoundCheckBox", 1, param_slot_6 };
+    static const QUMethod slot_7 = {"selectColor", 0, 0 };
+    static const QUParameter param_slot_8[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"selectFont", 1, param_slot_8 };
+    static const QUParameter param_slot_9[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_9 = {"setMarkType", 1, param_slot_9 };
+    static const QUParameter param_slot_10[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"sliderChanged", 1, param_slot_10 };
+    static const QUMethod slot_11 = {"slot_accept", 0, 0 };
+    static const QUMethod slot_12 = {"slot_add", 0, 0 };
+    static const QUParameter param_slot_13[] = {
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In },
+	{ 0, &static_QUType_varptr, "\x0e", QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_13 = {"slot_clickedListView", 3, param_slot_13 };
+    static const QUMethod slot_14 = {"slot_delete", 0, 0 };
+    static const QUMethod slot_15 = {"slot_new", 0, 0 };
+    static const QUMethod slot_16 = {"slot_reject", 0, 0 };
+    static const QUMethod slot_17 = {"slot_getComputerPath", 0, 0 };
+    static const QUParameter param_slot_18[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_18 = {"slot_textChanged", 1, param_slot_18 };
+    static const QUMethod slot_19 = {"startHelpMode", 0, 0 };
+    static const QUMethod slot_20 = {"slot_add_button", 0, 0 };
+    static const QUMethod slot_21 = {"slot_delete_button", 0, 0 };
+    static const QUMethod slot_22 = {"slot_new_button", 0, 0 };
+    static const QUMethod slot_23 = {"slot_getPixmapPath", 0, 0 };
+    static const QUParameter param_slot_24[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_24 = {"slot_text_buttonChanged", 1, param_slot_24 };
+    static const QUParameter param_slot_25[] = {
+	{ 0, &static_QUType_ptr, "QListViewItem", QUParameter::In },
+	{ 0, &static_QUType_varptr, "\x0e", QUParameter::In },
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_25 = {"slot_clicked_buttonListView", 3, param_slot_25 };
+    static const QUMethod slot_26 = {"apply", 0, 0 };
+    static const QUMethod slot_27 = {"slot_apply", 0, 0 };
+    static const QUMethod slot_28 = {"slot_getGobanPicturePath", 0, 0 };
+    static const QUMethod slot_29 = {"selectAltColor", 0, 0 };
+    static const QUMethod slot_30 = {"slot_getTablePicturePath", 0, 0 };
+    static const QUParameter param_slot_31[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_31 = {"slot_main_time_changed", 1, param_slot_31 };
+    static const QUParameter param_slot_32[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_32 = {"slot_BY_time_changed", 1, param_slot_32 };
+    static const QUMethod slot_33 = {"languageChange", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "doAdjourn()", &slot_0, QMetaData::Public },
+	{ "doPass()", &slot_1, QMetaData::Public },
+	{ "doRefresh()", &slot_2, QMetaData::Public },
+	{ "doResign()", &slot_3, QMetaData::Public },
+	{ "doScore(bool)", &slot_4, QMetaData::Public },
+	{ "doUndo()", &slot_5, QMetaData::Public },
+	{ "slot_clickedSoundCheckBox(int)", &slot_6, QMetaData::Public },
+	{ "selectColor()", &slot_7, QMetaData::Public },
+	{ "selectFont(int)", &slot_8, QMetaData::Public },
+	{ "setMarkType(int)", &slot_9, QMetaData::Public },
+	{ "sliderChanged(int)", &slot_10, QMetaData::Public },
+	{ "slot_accept()", &slot_11, QMetaData::Public },
+	{ "slot_add()", &slot_12, QMetaData::Public },
+	{ "slot_clickedListView(QListViewItem*,const QPoint&,int)", &slot_13, QMetaData::Public },
+	{ "slot_delete()", &slot_14, QMetaData::Public },
+	{ "slot_new()", &slot_15, QMetaData::Public },
+	{ "slot_reject()", &slot_16, QMetaData::Public },
+	{ "slot_getComputerPath()", &slot_17, QMetaData::Public },
+	{ "slot_textChanged(const QString&)", &slot_18, QMetaData::Public },
+	{ "startHelpMode()", &slot_19, QMetaData::Public },
+	{ "slot_add_button()", &slot_20, QMetaData::Public },
+	{ "slot_delete_button()", &slot_21, QMetaData::Public },
+	{ "slot_new_button()", &slot_22, QMetaData::Public },
+	{ "slot_getPixmapPath()", &slot_23, QMetaData::Public },
+	{ "slot_text_buttonChanged(const QString&)", &slot_24, QMetaData::Public },
+	{ "slot_clicked_buttonListView(QListViewItem*,const QPoint&,int)", &slot_25, QMetaData::Public },
+	{ "apply()", &slot_26, QMetaData::Public },
+	{ "slot_apply()", &slot_27, QMetaData::Public },
+	{ "slot_getGobanPicturePath()", &slot_28, QMetaData::Public },
+	{ "selectAltColor()", &slot_29, QMetaData::Public },
+	{ "slot_getTablePicturePath()", &slot_30, QMetaData::Public },
+	{ "slot_main_time_changed(int)", &slot_31, QMetaData::Public },
+	{ "slot_BY_time_changed(int)", &slot_32, QMetaData::Public },
+	{ "languageChange()", &slot_33, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"PreferencesDialogGui", parentObject,
+	slot_tbl, 34,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_PreferencesDialogGui.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* PreferencesDialogGui::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "PreferencesDialogGui" ) )
+	return this;
+    return QDialog::qt_cast( clname );
+}
+
+bool PreferencesDialogGui::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: doAdjourn(); break;
+    case 1: doPass(); break;
+    case 2: doRefresh(); break;
+    case 3: doResign(); break;
+    case 4: doScore((bool)static_QUType_bool.get(_o+1)); break;
+    case 5: doUndo(); break;
+    case 6: slot_clickedSoundCheckBox((int)static_QUType_int.get(_o+1)); break;
+    case 7: selectColor(); break;
+    case 8: selectFont((int)static_QUType_int.get(_o+1)); break;
+    case 9: setMarkType((int)static_QUType_int.get(_o+1)); break;
+    case 10: sliderChanged((int)static_QUType_int.get(_o+1)); break;
+    case 11: slot_accept(); break;
+    case 12: slot_add(); break;
+    case 13: slot_clickedListView((QListViewItem*)static_QUType_ptr.get(_o+1),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+2)),(int)static_QUType_int.get(_o+3)); break;
+    case 14: slot_delete(); break;
+    case 15: slot_new(); break;
+    case 16: slot_reject(); break;
+    case 17: slot_getComputerPath(); break;
+    case 18: slot_textChanged((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 19: startHelpMode(); break;
+    case 20: slot_add_button(); break;
+    case 21: slot_delete_button(); break;
+    case 22: slot_new_button(); break;
+    case 23: slot_getPixmapPath(); break;
+    case 24: slot_text_buttonChanged((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 25: slot_clicked_buttonListView((QListViewItem*)static_QUType_ptr.get(_o+1),(const QPoint&)*((const QPoint*)static_QUType_ptr.get(_o+2)),(int)static_QUType_int.get(_o+3)); break;
+    case 26: apply(); break;
+    case 27: slot_apply(); break;
+    case 28: slot_getGobanPicturePath(); break;
+    case 29: selectAltColor(); break;
+    case 30: slot_getTablePicturePath(); break;
+    case 31: slot_main_time_changed((int)static_QUType_int.get(_o+1)); break;
+    case 32: slot_BY_time_changed((int)static_QUType_int.get(_o+1)); break;
+    case 33: languageChange(); break;
+    default:
+	return QDialog::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool PreferencesDialogGui::qt_emit( int _id, QUObject* _o )
+{
+    return QDialog::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool PreferencesDialogGui::qt_property( int id, int f, QVariant* v)
+{
+    return QDialog::qt_property( id, f, v);
+}
+
+bool PreferencesDialogGui::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

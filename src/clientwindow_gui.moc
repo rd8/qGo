@@ -1,0 +1,158 @@
+/****************************************************************************
+** ClientWindowGui meta object code from reading C++ file 'clientwindow_gui.h'
+**
+** Created: Sat Jul 12 14:42:44 2014
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "clientwindow_gui.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *ClientWindowGui::className() const
+{
+    return "ClientWindowGui";
+}
+
+QMetaObject *ClientWindowGui::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ClientWindowGui( "ClientWindowGui", &ClientWindowGui::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ClientWindowGui::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ClientWindowGui", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ClientWindowGui::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ClientWindowGui", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ClientWindowGui::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QMainWindow::staticMetaObject();
+    static const QUMethod slot_0 = {"slot_cbquiet", 0, 0 };
+    static const QUMethod slot_1 = {"slot_cbopen", 0, 0 };
+    static const QUMethod slot_2 = {"slot_cblooking", 0, 0 };
+    static const QUMethod slot_3 = {"slot_pbrefreshgames", 0, 0 };
+    static const QUMethod slot_4 = {"slot_pbrefreshplayers", 0, 0 };
+    static const QUMethod slot_5 = {"slot_pbuser1", 0, 0 };
+    static const QUMethod slot_6 = {"slot_pbuser2", 0, 0 };
+    static const QUMethod slot_7 = {"slot_pbuser3", 0, 0 };
+    static const QUMethod slot_8 = {"slot_pbuser4", 0, 0 };
+    static const QUMethod slot_9 = {"slot_pbRelTabs", 0, 0 };
+    static const QUParameter param_slot_10[] = {
+	{ "qli", &static_QUType_ptr, "QListBoxItem", QUParameter::In }
+    };
+    static const QUMethod slot_10 = {"slot_RoomListClicked", 1, param_slot_10 };
+    static const QUMethod slot_11 = {"slot_leaveRoom", 0, 0 };
+    static const QUParameter param_slot_12[] = {
+	{ 0, &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_12 = {"slot_cbconnect", 1, param_slot_12 };
+    static const QUParameter param_slot_13[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_13 = {"slot_connect", 1, param_slot_13 };
+    static const QUParameter param_slot_14[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_14 = {"slot_seek", 1, param_slot_14 };
+    static const QUMethod slot_15 = {"languageChange", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slot_cbquiet()", &slot_0, QMetaData::Public },
+	{ "slot_cbopen()", &slot_1, QMetaData::Public },
+	{ "slot_cblooking()", &slot_2, QMetaData::Public },
+	{ "slot_pbrefreshgames()", &slot_3, QMetaData::Public },
+	{ "slot_pbrefreshplayers()", &slot_4, QMetaData::Public },
+	{ "slot_pbuser1()", &slot_5, QMetaData::Public },
+	{ "slot_pbuser2()", &slot_6, QMetaData::Public },
+	{ "slot_pbuser3()", &slot_7, QMetaData::Public },
+	{ "slot_pbuser4()", &slot_8, QMetaData::Public },
+	{ "slot_pbRelTabs()", &slot_9, QMetaData::Public },
+	{ "slot_RoomListClicked(QListBoxItem*)", &slot_10, QMetaData::Public },
+	{ "slot_leaveRoom()", &slot_11, QMetaData::Public },
+	{ "slot_cbconnect(const QString&)", &slot_12, QMetaData::Public },
+	{ "slot_connect(bool)", &slot_13, QMetaData::Public },
+	{ "slot_seek(bool)", &slot_14, QMetaData::Public },
+	{ "languageChange()", &slot_15, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"ClientWindowGui", parentObject,
+	slot_tbl, 16,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ClientWindowGui.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ClientWindowGui::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ClientWindowGui" ) )
+	return this;
+    return QMainWindow::qt_cast( clname );
+}
+
+bool ClientWindowGui::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slot_cbquiet(); break;
+    case 1: slot_cbopen(); break;
+    case 2: slot_cblooking(); break;
+    case 3: slot_pbrefreshgames(); break;
+    case 4: slot_pbrefreshplayers(); break;
+    case 5: slot_pbuser1(); break;
+    case 6: slot_pbuser2(); break;
+    case 7: slot_pbuser3(); break;
+    case 8: slot_pbuser4(); break;
+    case 9: slot_pbRelTabs(); break;
+    case 10: slot_RoomListClicked((QListBoxItem*)static_QUType_ptr.get(_o+1)); break;
+    case 11: slot_leaveRoom(); break;
+    case 12: slot_cbconnect((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 13: slot_connect((bool)static_QUType_bool.get(_o+1)); break;
+    case 14: slot_seek((bool)static_QUType_bool.get(_o+1)); break;
+    case 15: languageChange(); break;
+    default:
+	return QMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool ClientWindowGui::qt_emit( int _id, QUObject* _o )
+{
+    return QMainWindow::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ClientWindowGui::qt_property( int id, int f, QVariant* v)
+{
+    return QMainWindow::qt_property( id, f, v);
+}
+
+bool ClientWindowGui::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

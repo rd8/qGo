@@ -1,0 +1,125 @@
+/****************************************************************************
+** NewGameDialog meta object code from reading C++ file 'newgame_gui.h'
+**
+** Created: Sat Jul 12 14:42:47 2014
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "newgame_gui.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *NewGameDialog::className() const
+{
+    return "NewGameDialog";
+}
+
+QMetaObject *NewGameDialog::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_NewGameDialog( "NewGameDialog", &NewGameDialog::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString NewGameDialog::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "NewGameDialog", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString NewGameDialog::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "NewGameDialog", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* NewGameDialog::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QDialog::staticMetaObject();
+    static const QUMethod slot_0 = {"slot_changed", 0, 0 };
+    static const QUMethod slot_1 = {"slot_decline", 0, 0 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"slot_offer", 1, param_slot_2 };
+    static const QUMethod slot_3 = {"slot_pbsuggest", 0, 0 };
+    static const QUMethod slot_4 = {"slot_swapcolors", 0, 0 };
+    static const QUMethod slot_5 = {"slot_stats_opponent", 0, 0 };
+    static const QUMethod slot_6 = {"slot_cancel", 0, 0 };
+    static const QUMethod slot_7 = {"languageChange", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "slot_changed()", &slot_0, QMetaData::Public },
+	{ "slot_decline()", &slot_1, QMetaData::Public },
+	{ "slot_offer(bool)", &slot_2, QMetaData::Public },
+	{ "slot_pbsuggest()", &slot_3, QMetaData::Public },
+	{ "slot_swapcolors()", &slot_4, QMetaData::Public },
+	{ "slot_stats_opponent()", &slot_5, QMetaData::Public },
+	{ "slot_cancel()", &slot_6, QMetaData::Public },
+	{ "languageChange()", &slot_7, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"NewGameDialog", parentObject,
+	slot_tbl, 8,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_NewGameDialog.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* NewGameDialog::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "NewGameDialog" ) )
+	return this;
+    return QDialog::qt_cast( clname );
+}
+
+bool NewGameDialog::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: slot_changed(); break;
+    case 1: slot_decline(); break;
+    case 2: slot_offer((bool)static_QUType_bool.get(_o+1)); break;
+    case 3: slot_pbsuggest(); break;
+    case 4: slot_swapcolors(); break;
+    case 5: slot_stats_opponent(); break;
+    case 6: slot_cancel(); break;
+    case 7: languageChange(); break;
+    default:
+	return QDialog::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool NewGameDialog::qt_emit( int _id, QUObject* _o )
+{
+    return QDialog::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool NewGameDialog::qt_property( int id, int f, QVariant* v)
+{
+    return QDialog::qt_property( id, f, v);
+}
+
+bool NewGameDialog::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

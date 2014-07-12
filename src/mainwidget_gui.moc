@@ -1,0 +1,134 @@
+/****************************************************************************
+** MainWidgetGui meta object code from reading C++ file 'mainwidget_gui.h'
+**
+** Created: Sat Jul 12 14:42:46 2014
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "mainwidget_gui.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *MainWidgetGui::className() const
+{
+    return "MainWidgetGui";
+}
+
+QMetaObject *MainWidgetGui::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_MainWidgetGui( "MainWidgetGui", &MainWidgetGui::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString MainWidgetGui::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "MainWidgetGui", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString MainWidgetGui::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "MainWidgetGui", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* MainWidgetGui::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"doAdjourn", 0, 0 };
+    static const QUMethod slot_1 = {"doPass", 0, 0 };
+    static const QUMethod slot_2 = {"doRefresh", 0, 0 };
+    static const QUMethod slot_3 = {"doResign", 0, 0 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"doScore", 1, param_slot_4 };
+    static const QUMethod slot_5 = {"doUndo", 0, 0 };
+    static const QUParameter param_slot_6[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"setMarkType", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"sliderChanged", 1, param_slot_7 };
+    static const QUMethod slot_8 = {"languageChange", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "doAdjourn()", &slot_0, QMetaData::Public },
+	{ "doPass()", &slot_1, QMetaData::Public },
+	{ "doRefresh()", &slot_2, QMetaData::Public },
+	{ "doResign()", &slot_3, QMetaData::Public },
+	{ "doScore(bool)", &slot_4, QMetaData::Public },
+	{ "doUndo()", &slot_5, QMetaData::Public },
+	{ "setMarkType(int)", &slot_6, QMetaData::Public },
+	{ "sliderChanged(int)", &slot_7, QMetaData::Public },
+	{ "languageChange()", &slot_8, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"MainWidgetGui", parentObject,
+	slot_tbl, 9,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_MainWidgetGui.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* MainWidgetGui::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "MainWidgetGui" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool MainWidgetGui::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: doAdjourn(); break;
+    case 1: doPass(); break;
+    case 2: doRefresh(); break;
+    case 3: doResign(); break;
+    case 4: doScore((bool)static_QUType_bool.get(_o+1)); break;
+    case 5: doUndo(); break;
+    case 6: setMarkType((int)static_QUType_int.get(_o+1)); break;
+    case 7: sliderChanged((int)static_QUType_int.get(_o+1)); break;
+    case 8: languageChange(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool MainWidgetGui::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool MainWidgetGui::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool MainWidgetGui::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
